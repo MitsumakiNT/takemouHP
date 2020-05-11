@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="Common.css">
+    <link rel="stylesheet" href="works.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="inner">
+        <img src="newone.svg" class="logo">
+        <a href="hp.html">YUKI TAKEMURA</a>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item"><a href="">SURVICE</a></li>
+            <li class="global-nav__item"><a href="hp.html">HOME</a></li>
+            <li class="global-nav__item"><a href="">PRICE</a></li>
+            <li class="global-nav__item"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </div>
+      </header>
+    <main>
+      <body>
+        <div class="boadgame">
+        <h1>ボードゲーム制作</h1>
+            <p>悠遊亭というボードゲームサークルにて、<br>
+            ゲームルール考案・ゲームバランス調整、<br>
+            各種コンポート（内容物）プロダクトデザイン、<br>
+            イラストレーションの作成など、<br>
+            幅広くボードゲーム作成に携わっています。<br>
+            プロダクトデザインや<br>
+            イラストレーションの作成には<br>
+            Illustrater,Photoshopなどを活用しています。<br>
+            下記イメージギャラリーは、<br>
+            ステルスマーケットというゲームのものです。
+            </p>
+            <div class="CSSgal">
+
+              <!-- Don't wrap targets in parent -->
+              <s id="s1"></s> 
+              <s id="s2"></s>
+              <s id="s3"></s>
+              <s id="s4"></s>
+            
+              <div class="slider">
+                <div style="background:#5b8;">
+                  <img src="explain.png" class="samples">
+                </div>
+                <div style="background:#85b;">
+                  <img src="nice.png" class="samples">
+                </div>
+                <div style="background:#e95;">
+                  <img src="tapioca.png" class="samples">
+                </div>
+                <div style="background:#e59;">
+                  <img src="action.png" class="samples">
+                </div>
+              </div>
+              
+              <div class="prevNext">
+                <div><a href="#s4"></a><a href="#s2"></a></div>
+                <div><a href="#s1"></a><a href="#s3"></a></div>
+                <div><a href="#s2"></a><a href="#s4"></a></div>
+                <div><a href="#s3"></a><a href="#s1"></a></div>
+              </div>
+            
+              <div class="bullets">
+                <a href="#s1"></a>
+                <a href="#s2"></a>
+                <a href="#s3"></a>
+                <a href="#s4"></a>
+              </div>
+            
+            </div>
+        </div>
+        <div class="blogpress">
+          <h1>ブログサイト作成</h1>
+          <p>WordPressにて、オリジナルテーマを作成しています。
+          上記サークルのブログテーマも私が作成しました。
+
+
+          </p>
+        </div>
+      </body>
+    </main>
+      
+
+    <div class="footNavis">
+      <a class="footNavi" href="survice.html">SURVICE</a>
+      <a class="footNavi" href="hp.html">HOME</a>
+      <a class="footNavi" href="orderGuide.html">ORDER GUIDE</a>
+      <a class="footNavi" href="contact.html">CONTACT</a>
+    </div>
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+  $(function() {
+
+    function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('js-hamburger');
+  var blackBg = document.getElementById('js-black-bg');
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav-open');
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav-open');
+  });
+}
+toggleNav();
+
+$("#link").on('click', function(e){
+    e.preventDefault();  // 画面遷移を無効化
+});
+
+  });
+</script>
+</body>
+</html>
