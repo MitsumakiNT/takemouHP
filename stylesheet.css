@@ -37,6 +37,7 @@ path {
     height: 60px;
     width: 100%;
     background-color: turquoise;
+    fill: red;
 }
 
 .choiseCircle {
@@ -57,6 +58,10 @@ path {
 .choiseIcon {
     width: 40px;
     height: 40px;
+}
+
+.test1{
+    fill: red;
 }
 
 
